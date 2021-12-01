@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #a6aaa9;
+}
+
+#main #wraper {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 90%;
+  /* background-color: crimson; */
+}
+
+#wraper .cards {
+  height: 100%;
+  width: 24%;
+  border-radius: 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+#wraper .cards:hover {
+  transform: scale(1.1);
+}
+#wraper #c1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  background-color: #23625a;
+}
+
+#c1 #lft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 65%;
+  /* background-color: tomato; */
+}
+
+#c1 #lft #pro {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  /* background-color: yellow; */
+}
+
+#c1 #lft #img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-top: 7px;
+  background-image: url(https://images.unsplash.com/photo-1625698457101-fec2f565a8f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#lft #txt p {
+  color: rgb(214, 214, 214);
+  font-size: 10px;
+}
+
+#txt h3 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+#lft #icons {
+  position: relative;
+}
+
+#icons a {
+  text-decoration: none;
+  margin-top: 25px;
+  display: block;
+  /* background-color: yellow; */
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.582);
+  transition: all ease-in-out 0.3s;
+}
+
+#icons a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+#lft #foot h2 {
+  color: rgba(255, 255, 255, 0.603);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#c1 #rgt {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+  /* background-color: yellow; */
+}
+
+#c1 #rgt #content {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px 0 0 20px;
+  background-color: white;
+  box-shadow: -10px 0 20px 8px rgba(0, 0, 0, 0.205);
+}
+
+#content #nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#content #nav i {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #c2c7c6;
+}
+
+#content #nav #search {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 85px;
+  border-radius: 50px 0 0 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+#nav #search span {
+  font-weight: 300;
+  color: rgb(190, 190, 190);
+  font-size: 11px;
+}
+
+#nav #search i {
+  color: #23625a;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#content #maincont {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid transparent;
+  height: calc(100% - 70px);
+  width: 100%;
+  background-color: #aff3f3;
+  background-image: linear-gradient(180deg, #d7e9e9 0%, #edf9f8 100%);
+  border-radius: 20px 0 0 20px;
+}
+
+#maincont #p {
+  position: absolute;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  right: -20px;
+  color: #1b4741;
+  font-weight: 500;
+}
+
+#maincont #juta {
+  position: relative;
+  height: 40%;
+  width: 90%;
+  margin-left: 10%;
+  border-radius: 20px 0 0 20px;
+  margin-top: 80px;
+  background-image: url(https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+  background-size: cover;
+  background-position: center;
+  box-shadow: -15px 20px 25px rgba(0, 0, 0, 0.301);
+}
+
+#maincont #juta #price {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border-radius: 7px;
+  background-color: #e6b9be;
+}
+
+#maincont .btm {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background-color: white;
+  font-weight: 500;
+  color: #1b4741;
+  font-size: 10px;
+  box-shadow: -9px 13px 20px rgba(0, 0, 0, 0.267);
+  margin-left: 10%;
+  border-radius: 15px 0 0 15px;
+  padding: 20px;
+}
+
+#maincont #btm1 {
+  margin: 20px 0 12px 10%;
+}
+
+#wraper #c2 {
+  background-color: white;
+}
+#c2 #nav2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#menu {
+  font-size: 22px;
+  color: #a6aaa9;
+}
+#nav2 #search2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 30px;
+  border-radius: 100px;
+  color: #c2c7c6;
+  background-color: #f1f1f1;
+}
+#search2 i {
+  margin-right: 20px;
+  /* font-size: ; */
+  color: #1b4741;
+}
+#nav2 #pro2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-image: url(https://media.istockphoto.com/photos/stylish-man-posing-on-grey-background-picture-id973481674?b=1&k=20&m=973481674&s=170667a&w=0&h=N88rKUiC4M3YHGvanhxY5mMfVRsOSEKg9swrpwAnQQ0=);
+  background-size: cover;
+  background-position: center;
+}
+#maincont2 {
+  border-top: 1px solid transparent;
+  /* display: flex; */
+  position: relative;
+  height: calc(100% - 90px);
+  width: 100%;
+  border-radius: 30px;
+  background-color: #aff3f3;
+  background-image: linear-gradient(180deg, #d7e9e9 0%, #edf9f8 100%);
+}
+#maincont2 #line {
+  height: 2px;
+  width: 60px;
+  background-color: #1b4741;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+#maincont2 #text {
+  position: absolute;
+  /* margin: 25px; */
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#maincont2 #jutawraper {
+  margin-top: 20%;
+  height: 35%;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#maincont2 #juta1 {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  /* margin-left: 10%; */
+  border-radius: 20px 20px 20px 20px;
+  /* margin-top: 80px; */
+  background-image: url(https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+  background-size: cover;
+  background-position: center;
+  box-shadow: -5px 13px 20px rgba(0, 0, 0, 0.295);
+}
+
+#maincont2 #juta2 {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  /* margin-left: 10%; */
+  border-radius: 20px;
+  /* margin-top: 80px */
+  background-image: url(https://media.istockphoto.com/photos/creative-minimal-paper-idea-concept-white-shoe-with-white-background-picture-id1149654373?b=1&k=20&m=1149654373&s=170667a&w=0&h=B6JPkVf7-0Fty3R05byj4RbXX1c07x_zg2O-OHN7Ovo=);
+  background-size: cover;
+  background-position: center;
+  box-shadow: -5px 13px 20px rgba(0, 0, 0, 0.295);
+}
+
+#jutawraper .price {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border-radius: 7px;
+  background-color: #e6b9be;
+}
+#maincont2 #p2 {
+  display: flex;
+  justify-content: center;
+  color: #1b4741;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 100%;
+}
+#maincont2 .btmjuta2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background-color: white;
+  height: 15%;
+  margin: 15px 0;
+  margin-left: 10%;
+  padding: 0 10px;
+  border-radius: 15px;
+  box-shadow: -5px 9px 25px rgba(0, 0, 0, 0.233);
+}
+.btmjuta2 p {
+  width: 40%;
+  margin-left: 25px;
+  font-size: 12px;
+}
+.btmjuta2 #rgt2 {
+  width: 49%;
+  height: 100%;
+  background-image: url(https://catalog.21buttons.com/6a10f614905498bbe8649d6e955ca183530a2a57.smedium.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.btmjuta2 #rgt3 {
+  width: 49%;
+  height: 100%;
+  /* background-color: indigo; */
+  background-image: url(https://thumbs.dreamstime.com/b/red-sneakers-nike-brand-shoes-laces-jogging-fitness-stylish-youth-model-object-cut-out-white-background-side-185669010.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#wraper #c3 {position: relative;
+  background-color: #EAF3F0;
+  ;
+}
+#c3 #p4{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0);
+    margin-top: 40px;
+    font-size: 17px;
+    color:#23625A;
+}
+#c3 #maincont3{
+    border-top: 1px solid transparent;
+    background-color: #789992;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 90px;
+    height: calc(100% - 90px);
+    overflow: hidden;
+}
+#maincont3 #line2 {
+    height: 2px;
+    width: 60px;
+    background-color: white;
+    margin: 20px auto;
+    margin-top: 20px;
+  }
+  #maincont3 #text2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* margin: 25px; */
+    left: 50%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#maincont3 #juta4{
+  position: relative;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 15px;
+    background-image: url(https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2031&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.253);
+}
+
+#juta4 .price{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%,0%);
+  height: 40px;
+  width: 70%;
+  border-radius: 13px;
+  background-color: #E6B9BE;
+  color: white; 
+}
+
+#maincont3 #txt{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 35px;
+  color: white;
+}
+
+#maincont3 #txt p{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: 300;
+}
+
+#maincont3 #txt #line{
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.856);
+  margin: 20px 0;
+}
